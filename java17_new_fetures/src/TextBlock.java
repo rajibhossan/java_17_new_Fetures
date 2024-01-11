@@ -1,5 +1,16 @@
 public class TextBlock {
 
+        public static void main(String[] args) {
+
+            System.out.println(JsonNormalString);
+            System.out.println(JsonTextBox);
+            System.out.println(htmlTextBox);
+            System.out.println(xmlTextBox);
+            System.out.println(sqlTextBox);
+            System.out.println(getCoursJson("rajib@gmail.com", "pass1"));
+            
+    }
+    
     private static String JsonNormalString = "{\n" +
             "  \"username\": \"applicant@gmail.com\",\n" +
             "  \"password\": \"pass1\"\n" +
@@ -55,15 +66,7 @@ public class TextBlock {
                   """.formatted(userName, password);
     }
 
-    public static void main(String[] args) {
 
-        System.out.println(JsonNormalString);
-        System.out.println(JsonTextBox);
-        System.out.println(htmlTextBox);
-        System.out.println(xmlTextBox);
-        System.out.println(sqlTextBox);
-        System.out.println(getCoursJson("rajib@gmail.com", "pass1"));
-    }
 
 
 }
