@@ -26,16 +26,10 @@ public class JavaSeal {
 }
 enum Test {Shap2, Triangle, Rajib}
 
-sealed interface Shap2 permits Triangle, Rajib {
+sealed interface Shap2 permits Triangle, Rajib {}
 
-}
+sealed class Triangle implements Shap2 {}
 
-sealed class Triangle implements Shap2 {
-
-}
-
-final class Rajib extends Triangle implements Shap2 {
-
-}
+final class Rajib extends Triangle implements Shap2 {}
 
 
